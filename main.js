@@ -6,8 +6,7 @@ const cardContainer = document.getElementById('container')
 // generate random url
 const generateRandomUrl = () => {
     let url = 'https://pokeapi.co/api/v2/pokemon/'
-    const randomNum = Math.floor(Math.random() * 150) + 1;
-    console.log(url + randomNum)
+    const randomNum = Math.floor(Math.random() * 1000) + 1;
     return url + randomNum;
 }
 
@@ -29,10 +28,6 @@ const showData = allData => {
     // set value
     // cardImage.setAttribute('src', imgLink)
     // cardName.innerText = name.toUpperCase()
-
-    console.log(allData)
-    console.log(weight)
-
 
     cardContainer.innerHTML = `
     <div class="card w-96 bg-base-100 shadow-xl">
